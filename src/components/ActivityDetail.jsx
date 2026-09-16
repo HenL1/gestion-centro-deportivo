@@ -1,5 +1,11 @@
-function ActivityDetail({activity, onBack}){
-    return(
+import RegistrationButton from "./RegistrationButton";
+
+function ActivityDetail({
+    activity,
+    onBack, 
+    onRegister,
+    isRegistered
+    }){return (
         <section>
             <button onClick={onBack}>
                 Volver
@@ -8,7 +14,7 @@ function ActivityDetail({activity, onBack}){
             <h2>{activity.name}</h2>
 
             <p>
-                <strong>Categoria:</strong>{activity.cattegory}
+                <strong>Categoria:</strong>{activity.category}
             </p>
 
             <p>
@@ -20,13 +26,24 @@ function ActivityDetail({activity, onBack}){
             </p>
 
             <p>
-                <strong>Cupos disponibles:</strong>{activity.availableSpots}
+                <strong>Hora:</strong>{activity.time}
             </p>
 
             <p>
-                <strong>Descripcion:</strong>{activity.descriptiom}
+                <strong>cupos disponibles:</strong>{activity.availableSpots}
             </p>
+
+            <p>
+                <strong>Descripcion:</strong>{activity.description}
+            </p>
+
+            <RegistrationButton 
+            activity={activity}
+            onRegister={onRegister}
+            isRegistered={isRegistered}
+            />
         </section>
     );
 }
+
 export default ActivityDetail;

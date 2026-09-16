@@ -12,7 +12,7 @@ export const activities =[
     },
     {
         id:2,
-        name:"natacion",
+        name:"Natacion",
         category:"Deportes acuaticos",
         teacher:"Maria Gonzalez",
         schedule:"martes y jueves",
@@ -22,7 +22,7 @@ export const activities =[
     },
     {
         id:3,
-        name:"basquetbol",
+        name:"Basquetbol",
         category:"Deportes de equipo",
         teacher:"Pablo Senn",// Sablo Penn
         scheduler:"lunes y viernes",
@@ -42,7 +42,7 @@ export const activities =[
     },
     {
         id:5,
-        name:"badminton",
+        name:"Badminton",
         category:"individuales y dobles",
         teacher:"Matias Rodrigez",//El maty 
         scheduler:"lunes y miercoles",//Ah
@@ -52,7 +52,7 @@ export const activities =[
     },
     {
         id:6,
-        name:"yoga",
+        name:"Yoga",
         category:"Bienestar",
         teacher:"Laura Fernadez",
         scheduler:"Miercoles y Veirnes",
