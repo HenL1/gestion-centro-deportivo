@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { activities } from "./data/activities";
+import {useEffect, useState} from "react";
+import { getActivies } from "./services/activityService";
 import ActivityList from "./components/ActivityList";
 import SearchBar from "./components/SearchBar";
 import ActivityDetail from "./components/ActivityDetail";
@@ -8,6 +8,15 @@ function App() {
   const [search, setSearch] = useState("");
   const [selectedActivity, setSelectedActivity] = useState(null);
   const [registeredActivities, setRegisteredActivities] = useState([]);
+  const [activities, setActivities] = useState([]);
+  const [loading, setLoaading] = useState(true);
+
+  useEffect(() => {
+    getActivies().then((data) => {
+      setActivities(data);
+      setLoaading(false);
+    });
+  },[]);
 
   const filteredActivities = activities.filter((activity) =>
     activity.name.toLowerCase().includes(search.toLowerCase())
@@ -24,12 +33,15 @@ function App() {
     <div>
       <h1>Gestión de Centro Deportivo</h1>
 
-      {selectedActivity ? (
-        <ActivityDetail
-          activity={selectedActivity}
-          onBack={() => setSelectedActivity(null)}
-          onRegister={handleRegister}
-          isRegistered={registeredActivities.includes(selectedActivity.id)}//ve si el id ya esta inscrito si no dice inscribirme
+      {loading? (
+        <p>Cargando actividades...</p>
+      ) : selectedActivity ? (
+            <ActivityDetail
+            activity={selectedActivity}
+            onBack={() => setSelectedActivity(null)}
+            onRegister={handleRegister}
+            isRegistered={registeredActivities.includes(selectedActivity.id)}
+            //ve si el id ya esta inscrito sino dice inscribirme
         />
       ) : (
         <>
