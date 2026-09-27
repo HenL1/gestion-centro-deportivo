@@ -1,29 +1,33 @@
-function ActivityCard({ activity, onSelect }) {
+function TarjetaActividad({ actividad, alSeleccionar }) {
   return (
-    <article>
-      <h2>{activity.name}</h2>
+    <article className="tarjeta-actividad">
+      <span className="etiqueta-categoria">{actividad.categoria}</span>
+      <h2>{actividad.nombre}</h2>
 
-      <p>
-        <strong>Profesor:</strong> {activity.teacher}
+      <p className="dato-actividad">
+        <strong>Profesor:</strong> {actividad.profesor}
       </p>
 
-      <p>
-        <strong>Horario:</strong> {activity.schedule}
+      <p className="dato-actividad">
+        <strong>Horario:</strong> {actividad.horario}
       </p>
 
-      <p>
-        <strong>Hora:</strong> {activity.time}
+      <p className="dato-actividad">
+        <strong>Hora:</strong> {actividad.hora}
       </p>
 
-      <p>
-        <strong>Cupos disponibles:</strong> {activity.availableSpots}
+      <p className="cupos">
+        <strong>Cupos disponibles:</strong> {actividad.cuposDisponibles}
       </p>
 
-      <button onClick={() => onSelect(activity)}>
+      <button
+        className="boton boton-secundario"
+        onClick={() => alSeleccionar(actividad)}
+      >
         Ver detalles
       </button>
     </article>
   );
 }
 
-export default ActivityCard;
+export default TarjetaActividad;

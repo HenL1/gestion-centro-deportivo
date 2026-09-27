@@ -1,16 +1,55 @@
-# React + Vite
+# Gestión de Centro Deportivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web creada con React para revisar las actividades disponibles de un centro deportivo llamado locosxeldeporte. Permite buscar actividades, ver sus detalles e inscribirse en la clase de preferencia del usuario.
 
-Currently, two official plugins are available:
+## Integrantes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Matías Rodríguez
+- Henry Lara
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Listado de actividades deportivas.
+- Búsqueda por nombre, profesor o categoría.
+- Vista con el detalle de cada actividad.
+- Inscripción y cancelación de inscripciones.
+- Actualización de los cupos disponibles.
+- Sección para revisar las actividades inscritas.
+- Diseño adaptable a computador y celular.
+- Carga simulada de datos.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- CSS
+- Vite
+
+## Cómo ejecutar el proyecto
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+3. Abrir una terminal y ejecutar:
+
+```bash
+npm install
+```
+
+4. Después, ejecutar:
+
+```bash
+npm run dev
+```
+
+5. Abrir en el navegador la dirección que aparezca en la terminal, normalmente `http://localhost:5173/`.
+
+## Organización del proyecto
+
+- `src/components`: componentes de la interfaz.
+- `src/data`: información de las actividades.
+- `src/services`: petición simulada para obtener los datos.
+- `public`: archivos públicos, como el logo.
+
+## Enlace de la aplicación
+
+

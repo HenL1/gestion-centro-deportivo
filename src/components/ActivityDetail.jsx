@@ -1,49 +1,37 @@
-import RegistrationButton from "./RegistrationButton";
+import BotonInscripcion from "./RegistrationButton";
 
-function ActivityDetail({
-    activity,
-    onBack, 
-    onRegister,
-    isRegistered
-    }){return (
-        <section>
-            <button onClick={onBack}>
-                Volver
-            </button>
+function DetalleActividad({
+  actividad,
+  alVolver,
+  alInscribir,
+  alCancelar,
+  estaInscrita,
+}) {
+  return (
+    <section className="detalle-actividad">
+      <button className="boton-volver" onClick={alVolver}>
+        ← Volver a las actividades
+      </button>
 
-            <h2>{activity.name}</h2>
+      <span className="etiqueta-categoria">{actividad.categoria}</span>
+      <h2>{actividad.nombre}</h2>
+      <p className="descripcion-actividad">{actividad.descripcion}</p>
 
-            <p>
-                <strong>Categoria:</strong>{activity.category}
-            </p>
+      <div className="datos-detalle">
+        <div><span>Profesor</span><strong>{actividad.profesor}</strong></div>
+        <div><span>Días</span><strong>{actividad.horario}</strong></div>
+        <div><span>Horario</span><strong>{actividad.hora}</strong></div>
+        <div><span>Cupos disponibles</span><strong>{actividad.cuposDisponibles}</strong></div>
+      </div>
 
-            <p>
-                <strong>Profesor:</strong>{activity.teacher}
-            </p>
-
-            <p>
-                <strong>Horario:</strong>{activity.schedule}
-            </p>
-
-            <p>
-                <strong>Hora:</strong>{activity.time}
-            </p>
-
-            <p>
-                <strong>cupos disponibles:</strong>{activity.availableSpots}
-            </p>
-
-            <p>
-                <strong>Descripcion:</strong>{activity.description}
-            </p>
-
-            <RegistrationButton 
-            activity={activity}
-            onRegister={onRegister}
-            isRegistered={isRegistered}
-            />
-        </section>
-    );
+      <BotonInscripcion
+        actividad={actividad}
+        alInscribir={alInscribir}
+        alCancelar={alCancelar}
+        estaInscrita={estaInscrita}
+      />
+    </section>
+  );
 }
 
-export default ActivityDetail;
+export default DetalleActividad;

@@ -1,73 +1,72 @@
-//un arreglo con objetos 
-export const activities =[
+export const actividades = [
     {
         id: 1,
-        name:"Futbol",
-        category:"Deportes de equipo",
-        teacher:"Carlos Perez",
-        Schedule:"lunes y miercoles",
-        time: "18:00 - 19:30",
-        availableSpots: 15,
-        description:"Actividad deportiva enfocada en mejorar las habilidades tecnicas, fisicas y de trabajo en equipo."
+        nombre:"Fútbol",
+        categoria:"Deportes de equipo",
+        profesor:"Carlos Pérez",
+        horario:"Lunes y miércoles",
+        hora: "18:00 - 19:30",
+        cuposDisponibles: 15,
+        descripcion:"Actividad deportiva enfocada en mejorar las habilidades técnicas, físicas y de trabajo en equipo."
     },
     {
         id:2,
-        name:"Natacion",
-        category:"Deportes acuaticos",
-        teacher:"Maria Gonzalez",
-        schedule:"martes y jueves",
-        time:"17:00 - 18:00",
-        availableSpots:10,
-        description:"Clases de natacion para mejorar la tecnica,resistencia,cordinacion y seguridad en el agua."
+        nombre:"Natación",
+        categoria:"Deportes acuáticos",
+        profesor:"María González",
+        horario:"Martes y jueves",
+        hora:"17:00 - 18:00",
+        cuposDisponibles:10,
+        descripcion:"Clases de natación para mejorar la técnica, resistencia, coordinación y seguridad en el agua."
     },
     {
         id:3,
-        name:"Basquetbol",
-        category:"Deportes de equipo",
-        teacher:"Pablo Senn",// Sablo Penn
-        scheduler:"lunes y viernes",
-        time:"19:00 - 20:30",
-        availableSpots: 12,
-        description:"Entrenamiento de basquetboll orientado en el desarollo de habilidades individuales y colectivas."
+        nombre:"Básquetbol",
+        categoria:"Deportes de equipo",
+        profesor:"Pablo Senn",
+        horario:"Lunes y viernes",
+        hora:"19:00 - 20:30",
+        cuposDisponibles: 12,
+        descripcion:"Entrenamiento de básquetbol orientado al desarrollo de habilidades individuales y colectivas."
     },
     {
         id:4,
-        name:"Boxeo",
-        category:"combate",
-        teacher:"Cristian Liempi",//la bomba 
-        scheduler:"Martes y Jueves",
-        time:"19:00 - 20:00",
-        availableSpots:8,
-        description:"Entrenamiento de boxeo enfocado en tecnica, cordinacion, resistencia y acondicionamiento fisico."
+        nombre:"Boxeo",
+        categoria:"Combate",
+        profesor:"Cristian Liempi",
+        horario:"Martes y jueves",
+        hora:"19:00 - 20:00",
+        cuposDisponibles:8,
+        descripcion:"Entrenamiento de boxeo enfocado en técnica, coordinación, resistencia y acondicionamiento físico."
     },
     {
         id:5,
-        name:"Badminton",
-        category:"individuales y dobles",
-        teacher:"Matias Rodrigez",//El maty 
-        scheduler:"lunes y miercoles",//Ah
-        time:"18:30 - 20:00:",
-        availableSpots:12,
-        description:"Entrnamiento de badminton enfocado en la cordinacion,resistencia y trabajo en equipo."
+        nombre:"Bádminton",
+        categoria:"Individuales y dobles",
+        profesor:"Matías Rodríguez",
+        horario:"Lunes y miércoles",
+        hora:"18:30 - 20:00",
+        cuposDisponibles:12,
+        descripcion:"Entrenamiento de bádminton enfocado en la coordinación, resistencia y trabajo en equipo."
     },
     {
         id:6,
-        name:"Yoga",
-        category:"Bienestar",
-        teacher:"Laura Fernadez",
-        scheduler:"Miercoles y Veirnes",
-        time:"10:00 - 11:00",
-        availableSpots:20,
-        description:"Sesiones de yoga orientadas a la flexibilidad, movilidad, respiracion y relajacion."
+        nombre:"Yoga",
+        categoria:"Bienestar",
+        profesor:"Laura Fernández",
+        horario:"Miércoles y viernes",
+        hora:"10:00 - 11:00",
+        cuposDisponibles:20,
+        descripcion:"Sesiones de yoga orientadas a la flexibilidad, movilidad, respiración y relajación."
     },
     {
         id:7,
-        name:"Musculacion",
-        category:"Acondicionamiento fisico",
-        teacher:"Sebastian Rojas",
-        scheduler:"Lunes a Viernes",
-        time:"80:00 - 21:00",
-        availableSpots:25,
-        description:"Entrenamiento con ejercicios de fuerza para mejorar la condicion y el desarrollo muscular."
+        nombre:"Musculación",
+        categoria:"Acondicionamiento físico",
+        profesor:"Sebastián Rojas",
+        horario:"Lunes a viernes",
+        hora:"08:00 - 21:00",
+        cuposDisponibles:25,
+        descripcion:"Entrenamiento con ejercicios de fuerza para mejorar la condición y el desarrollo muscular."
     }
 ];

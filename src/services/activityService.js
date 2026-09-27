@@ -1,9 +1,9 @@
-import { activities } from "../data/activities";
+import { actividades } from "../data/activities";
 
-export const getActivies = () =>{
-    return new Promise((resolve) =>{
-        setTimeout(() => {
-          resolve(activities);  
-        },1000)
-    }); 
+export const obtenerActividades = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(actividades);
+    }, 1000);
+  });
 };

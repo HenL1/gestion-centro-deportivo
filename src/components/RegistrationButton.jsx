@@ -1,17 +1,32 @@
-//boton de registro
-function RegistrationButton({ activity, onRegister,isRegistered}){
-    const handleRegister = () =>{
-        onRegister(activity);
-    };
+function BotonInscripcion({
+  actividad,
+  alInscribir,
+  alCancelar,
+  estaInscrita,
+}) {
+  const sinCupos = actividad.cuposDisponibles === 0 && !estaInscrita;
 
-    return (
-        <button onClick={handleRegister} disabled={isRegistered}>
-            {isRegistered? "Inscrito" : "Inscribirme"} 
-        </button>
-    );
+  const manejarClic = () => {
+    if (estaInscrita) {
+      alCancelar(actividad);
+    } else {
+      alInscribir(actividad);
+    }
+  };
+
+  return (
+    <button
+      className={`boton ${estaInscrita ? "boton-peligro" : "boton-principal"}`}
+      onClick={manejarClic}
+      disabled={sinCupos}
+    >
+      {estaInscrita
+        ? "Cancelar inscripción"
+        : sinCupos
+          ? "Sin cupos disponibles"
+          : "Inscribirme en esta actividad"}
+    </button>
+  );
 }
-export default RegistrationButton;
-//el componente recibe tres Props activity, onRegister,isRegistered
-//isRegister permite saber si el usuario ya esta incrito
-//disabled en isRegistered desactiva el boton despues de incribirse
- //{isRegistered? "Inscrito" : "Inscribirme"} esto cambia el texto del boton segun el caso
+
+export default BotonInscripcion;
