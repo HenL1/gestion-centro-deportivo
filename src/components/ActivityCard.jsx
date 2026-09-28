@@ -16,6 +16,10 @@ function TarjetaActividad({ actividad, alSeleccionar }) {
         <strong>Hora:</strong> {actividad.hora}
       </p>
 
+      <p className="valor-hora">
+        <strong>Valor por hora:</strong> ${actividad.valorHora.toLocaleString("es-CL")}
+      </p>
+
       <p className="cupos">
         <strong>Cupos disponibles:</strong> {actividad.cuposDisponibles}
       </p>

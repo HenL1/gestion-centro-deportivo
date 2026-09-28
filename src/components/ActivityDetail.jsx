@@ -21,6 +21,7 @@ function DetalleActividad({
         <div><span>Profesor</span><strong>{actividad.profesor}</strong></div>
         <div><span>Días</span><strong>{actividad.horario}</strong></div>
         <div><span>Horario</span><strong>{actividad.hora}</strong></div>
+        <div><span>Valor por hora</span><strong>${actividad.valorHora.toLocaleString("es-CL")}</strong></div>
         <div><span>Cupos disponibles</span><strong>{actividad.cuposDisponibles}</strong></div>
       </div>
 

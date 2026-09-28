@@ -219,6 +219,12 @@ input:focus-visible {
   color: #0f766e;
 }
 
+.valor-hora {
+  margin: 0 0 10px;
+  color: #334155;
+  line-height: 1.5;
+}
+
 .boton {
   width: 100%;
   margin-top: auto;
