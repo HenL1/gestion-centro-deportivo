@@ -96,7 +96,13 @@ function App() {
             />
           </div>
           <div className="texto-encabezado">
-            <h1>Gestión de Centro Deportivo</h1>
+            <h1 className="titulo-imagen-contenedor">
+              <img
+                className="titulo-imagen"
+                src="/logo-centro-deportivo.png"
+                alt="Centro Deportivo"
+              />
+            </h1>
             <p className="descripcion-principal">
               Revisa las actividades disponibles y encuentra la que más te guste.
             </p>

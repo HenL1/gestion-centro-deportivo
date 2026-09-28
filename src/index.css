@@ -79,12 +79,17 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
-.encabezado h1 {
-  max-width: 700px;
-  margin: 0;
-  color: #95c11f;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.08;
+.titulo-imagen-contenedor {
+  width: min(100%, 520px);
+  aspect-ratio: 3.4;
+  overflow: hidden;
+}
+
+.titulo-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(-31%);
 }
 
 .descripcion-principal {
