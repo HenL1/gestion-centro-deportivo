@@ -5,6 +5,13 @@ import BarraBusqueda from "./components/SearchBar";
 import DetalleActividad from "./components/ActivityDetail";
 import MisInscripciones from "./components/MisInscripciones";
 
+const normalizarTexto = (texto) =>
+  texto
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+
 function App() {
   const [busqueda, setBusqueda] = useState("");
   const [actividadSeleccionada, setActividadSeleccionada] = useState(null);
@@ -26,12 +33,12 @@ function App() {
       });
   }, []);
 
-  const busquedaNormalizada = busqueda.toLowerCase();
+  const busquedaNormalizada = normalizarTexto(busqueda);
   const actividadesFiltradas = actividades.filter((actividad) => {
     return (
-      actividad.nombre.toLowerCase().includes(busquedaNormalizada) ||
-      actividad.profesor.toLowerCase().includes(busquedaNormalizada) ||
-      actividad.categoria.toLowerCase().includes(busquedaNormalizada)
+      normalizarTexto(actividad.nombre).includes(busquedaNormalizada) ||
+      normalizarTexto(actividad.profesor).includes(busquedaNormalizada) ||
+      normalizarTexto(actividad.categoria).includes(busquedaNormalizada)
     );
   });
 
