@@ -52,4 +52,4 @@ npm run dev
 
 ## Enlace de la aplicación
 
-
+[https://gestion-centro-deportivo.vercel.app/](https://gestion-centro-deportivo.vercel.app/)
