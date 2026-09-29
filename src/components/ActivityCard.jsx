@@ -1,6 +1,9 @@
 function TarjetaActividad({ actividad, alSeleccionar }) {
   return (
     <article className="tarjeta-actividad">
+      {actividad.imagen && (
+        <img className="imagen-actividad" src={actividad.imagen} alt={actividad.descripcionImagen} />
+      )}
       <span className="etiqueta-categoria">{actividad.categoria}</span>
       <h2>{actividad.nombre}</h2>
 

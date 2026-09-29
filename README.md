@@ -50,6 +50,16 @@ npm run dev
 - `src/services`: petición simulada para obtener los datos.
 - `public`: archivos públicos, como el logo.
 
+Las fotos de las actividades son ilustrativas y tienen licencia CC0. Sus fuentes están en Wikimedia Commons:
+
+- [Fútbol](https://commons.wikimedia.org/wiki/File:Adidas_soccer_ball_on_a_grass_pitch_(Unsplash).jpg) — Peter Glaser.
+- [Natación](https://commons.wikimedia.org/wiki/File:Swimming_laps_(Unsplash_rAyIvNqlwCY).jpg) — Artem Verbo.
+- [Básquetbol](https://commons.wikimedia.org/wiki/File:Basketball_Hoop_in_Marin_County.jpg) — Julianibarra.
+- [Boxeo](https://commons.wikimedia.org/wiki/File:Pair_of_boxing_gloves.jpg) — Petey21.
+- [Bádminton](https://commons.wikimedia.org/wiki/File:Badminton-1428046.jpg) — annca.
+- [Yoga](https://commons.wikimedia.org/wiki/File:Dickinson_Law_Yoga_Offering.jpg) — Jeremy Hess Photography.
+- [Musculación](https://commons.wikimedia.org/wiki/File:Weight_training_gear_(23673556034).jpg) — StockyPics.
+
 ## Enlace de la aplicación
 
 [https://gestion-centro-deportivo.vercel.app/](https://gestion-centro-deportivo.vercel.app/)

@@ -190,6 +190,14 @@ input:focus-visible {
   padding: 22px;
 }
 
+.imagen-actividad {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 16px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
 .tarjeta-actividad h2 {
   margin: 13px 0 18px;
   color: #173645;

@@ -2,6 +2,8 @@ export const actividades = [
     {
         id: 1,
         nombre:"Fútbol",
+        imagen:"/futbol.jpg",
+        descripcionImagen:"Balón de fútbol sobre el césped",
         categoria:"Deportes de equipo",
         profesor:"Carlos Pérez",
         horario:"Lunes y miércoles",
@@ -12,6 +14,8 @@ export const actividades = [
     {
         id:2,
         nombre:"Natación",
+        imagen:"/natacion.jpg",
+        descripcionImagen:"Piscina con carriles para nadar",
         categoria:"Deportes acuáticos",
         profesor:"María González",
         horario:"Martes y jueves",
@@ -22,6 +26,8 @@ export const actividades = [
     {
         id:3,
         nombre:"Básquetbol",
+        imagen:"/basquetbol.jpg",
+        descripcionImagen:"Cancha y aro de básquetbol",
         categoria:"Deportes de equipo",
         profesor:"Pablo Senn",
         horario:"Lunes y viernes",
@@ -32,6 +38,8 @@ export const actividades = [
     {
         id:4,
         nombre:"Boxeo",
+        imagen:"/boxeo.jpg",
+        descripcionImagen:"Un par de guantes de boxeo",
         categoria:"Combate",
         profesor:"Cristian Liempi",
         horario:"Martes y jueves",
@@ -42,6 +50,8 @@ export const actividades = [
     {
         id:5,
         nombre:"Bádminton",
+        imagen:"/badminton.jpg",
+        descripcionImagen:"Raqueta y volantes de bádminton",
         categoria:"Individuales y dobles",
         profesor:"Matías Rodríguez",
         horario:"Lunes y miércoles",
@@ -52,6 +62,8 @@ export const actividades = [
     {
         id:6,
         nombre:"Yoga",
+        imagen:"/yoga.jpg",
+        descripcionImagen:"Personas practicando yoga",
         categoria:"Bienestar",
         profesor:"Laura Fernández",
         horario:"Miércoles y viernes",
@@ -62,6 +74,8 @@ export const actividades = [
     {
         id:7,
         nombre:"Musculación",
+        imagen:"/musculacion.jpg",
+        descripcionImagen:"Mancuernas y pesas de entrenamiento",
         categoria:"Acondicionamiento físico",
         profesor:"Sebastián Rojas",
         horario:"Lunes a viernes",
