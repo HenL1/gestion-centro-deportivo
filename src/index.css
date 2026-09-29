@@ -239,13 +239,13 @@ input:focus-visible {
 }
 
 .boton-secundario {
-  border: 1px solid #0e7490;
-  color: #0e6279;
-  background: white;
+  border: 1px solid #83a91b;
+  color: #173645;
+  background: #95c11f;
 }
 
 .boton-secundario:hover {
-  background: #ecf8fa;
+  background: #a7d12d;
 }
 
 .boton-principal {
