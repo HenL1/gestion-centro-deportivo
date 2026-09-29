@@ -150,8 +150,8 @@ function App() {
 
       <footer className="pie-pagina">
         <p>Centro deportivo de Temuco</p>
-        <p>Dirección de ejemplo: Pasaje Los Deportes 123, Temuco</p>
-        <p>Teléfono de ejemplo: +56 9 0000 0000</p>
+        <p>Dirección: Pasaje Los Deportes 123, Temuco</p>
+        <p>Teléfono: +56 9 0000 0000</p>
       </footer>
     </div>
   );
