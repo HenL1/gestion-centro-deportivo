@@ -117,7 +117,7 @@ input:focus-visible {
 .buscador label {
   display: block;
   margin-bottom: 9px;
-  color: #164e63;
+  color: #53780f;
   font-weight: 700;
 }
 
@@ -131,7 +131,7 @@ input:focus-visible {
 }
 
 .buscador input:focus {
-  border-color: #0e7490;
+  border-color: #95c11f;
   background: white;
 }
 
@@ -157,15 +157,15 @@ input:focus-visible {
 }
 
 .subtitulo {
-  color: #0f766e;
+  color: #53780f;
 }
 
 .contador-actividades {
   flex: none;
   padding: 7px 11px;
   border-radius: 999px;
-  color: #0f5f67;
-  background: #dff3f1;
+  color: #53780f;
+  background: #ecf7d6;
   font-size: 0.9rem;
   font-weight: 700;
 }
@@ -201,8 +201,8 @@ input:focus-visible {
   display: inline-block;
   padding: 5px 9px;
   border-radius: 6px;
-  color: #0f5f67;
-  background: #dff3f1;
+  color: #53780f;
+  background: #ecf7d6;
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -216,7 +216,7 @@ input:focus-visible {
 
 .cupos {
   margin-bottom: 22px;
-  color: #0f766e;
+  color: #53780f;
 }
 
 .valor-hora {
@@ -239,29 +239,29 @@ input:focus-visible {
 }
 
 .boton-secundario {
-  border: 1px solid #83a91b;
-  color: #173645;
-  background: #95c11f;
+  border: 1px solid #5d8113;
+  color: white;
+  background: #5d8113;
 }
 
 .boton-secundario:hover {
-  background: #a7d12d;
+  background: #4b6d0e;
 }
 
 .boton-principal {
-  border: 1px solid #0f766e;
+  border: 1px solid #5d8113;
   color: white;
-  background: #0f766e;
+  background: #5d8113;
 }
 
 .boton-principal:hover:not(:disabled) {
-  background: #0c625c;
+  background: #4b6d0e;
 }
 
 .boton-principal:disabled {
   cursor: default;
-  border-color: #8ab8b3;
-  background: #8ab8b3;
+  border-color: #aabe8b;
+  background: #aabe8b;
 }
 
 .boton-peligro {
@@ -284,7 +284,7 @@ input:focus-visible {
   margin: 0 0 28px;
   padding: 0;
   border: 0;
-  color: #0e7490;
+  color: #53780f;
   background: transparent;
   font-weight: 700;
 }
@@ -386,7 +386,7 @@ input:focus-visible {
 .nombre-inscripcion {
   padding: 0;
   border: 0;
-  color: #0e6279;
+  color: #53780f;
   text-align: left;
   background: transparent;
   font-weight: 700;
@@ -413,7 +413,7 @@ input:focus-visible {
   padding: 24px;
   color: #28451c;
   text-align: center;
-  background: #eaf6cf;
+  background: #f4fae7;
 }
 
 .pie-pagina p {
