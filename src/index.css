@@ -411,13 +411,13 @@ input:focus-visible {
 
 .pie-pagina {
   padding: 24px;
-  color: #cbd5e1;
+  color: #28451c;
   text-align: center;
-  background: #173645;
+  background: #eaf6cf;
 }
 
 .pie-pagina p {
-  margin: 0;
+  margin: 4px 0;
 }
 
 @media (max-width: 850px) {
