@@ -294,17 +294,18 @@ input:focus-visible {
   font-size: 2.25rem;
 }
 
-.descripcion-actividad {
-  margin: 15px 0 26px;
-  color: #52616b;
-  line-height: 1.7;
-}
-
 .datos-detalle {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
+}
+
+.nota-precio {
+  margin: 0 0 24px;
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .datos-detalle div {
@@ -436,11 +437,29 @@ input:focus-visible {
 
 @media (max-width: 600px) {
   .encabezado {
-    padding: 38px 20px;
+    padding: 20px 20px 22px;
+  }
+
+  .encabezado-contenido {
+    gap: 8px;
+  }
+
+  .logo-contenedor {
+    max-width: 200px;
+  }
+
+  .titulo-imagen-contenedor {
+    width: min(100%, 300px);
+  }
+
+  .descripcion-principal {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .contenido-principal {
-    padding: 26px 16px 42px;
+    padding: 20px 16px 42px;
   }
 
   .titulo-seccion {

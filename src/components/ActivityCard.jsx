@@ -17,7 +17,7 @@ function TarjetaActividad({ actividad, alSeleccionar }) {
       </p>
 
       <p className="valor-hora">
-        <strong>Valor por hora:</strong> ${actividad.valorHora.toLocaleString("es-CL")}
+        <strong>Tarifa referencial por hora:</strong> ${actividad.valorHora.toLocaleString("es-CL")}
       </p>
 
       <p className="cupos">

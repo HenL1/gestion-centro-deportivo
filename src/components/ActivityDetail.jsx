@@ -15,15 +15,18 @@ function DetalleActividad({
 
       <span className="etiqueta-categoria">{actividad.categoria}</span>
       <h2>{actividad.nombre}</h2>
-      <p className="descripcion-actividad">{actividad.descripcion}</p>
 
       <div className="datos-detalle">
         <div><span>Profesor</span><strong>{actividad.profesor}</strong></div>
         <div><span>Días</span><strong>{actividad.horario}</strong></div>
         <div><span>Horario</span><strong>{actividad.hora}</strong></div>
-        <div><span>Valor por hora</span><strong>${actividad.valorHora.toLocaleString("es-CL")}</strong></div>
+        <div><span>Tarifa por hora</span><strong>${actividad.valorHora.toLocaleString("es-CL")}</strong></div>
         <div><span>Cupos disponibles</span><strong>{actividad.cuposDisponibles}</strong></div>
       </div>
+
+      <p className="nota-precio">
+        Precio referencial: el total depende de la duración. Esta inscripción no realiza cobros.
+      </p>
 
       <BotonInscripcion
         actividad={actividad}
